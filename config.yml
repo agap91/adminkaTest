@@ -1,0 +1,10 @@
+apps:
+  - name: client
+    script: node_modules/nuxt-start/bin/nuxt-start.js
+    cwd: /opt/ppstavki-admin
+    max_memory_restart: "250M"
+    args: "start"
+    watch: true
+    env_production:
+      PORT: 5000
+      NODE_ENV: production
